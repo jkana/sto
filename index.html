@@ -4,8 +4,9 @@
    <body style="font-family:Century Gothic;">
       <center>
       <h2>Subdomain Takeover by jkana101</h2>
-      <img align ="center" width=250 height=250 src="https://pbs.twimg.com/profile_images/1385497745641725955/qvRwtg31_400x400.jpg"></img>
+      <img align ="center" width=250 height=250 src="https://pbs.twimg.com/profile_images/1385497745641725955/qvRwtg31_400x400.jpg" onmouseover=alert(document.domain)></img>
       <br/>
+      <h2>Mouseover the picture for XSS</h2>
       <script>document.write("<h2>" + document.domain + "</h2>")</script>
       <script>document.write("<h2> Your cookie is: " + document.cookie)</script>
       <br/>
